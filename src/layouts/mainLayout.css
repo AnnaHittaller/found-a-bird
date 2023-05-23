@@ -1,0 +1,237 @@
+/************* GENERAL LAYOUT STYLES ***************/
+.main-layout {
+  width: 100%;
+  /* max-height: calc(100% - 2rem); */
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+/* ***************** TITLE PAGE *****************/
+.titlepage-content h1 {
+  color: white;
+  text-shadow: -1px 0 #d49d85, 0 1px #d49d85, 1px 0 #d49d85, 0 -2px #d49d85;
+  padding: 3rem 0 12rem;
+}
+
+.titlepage-content button {
+  background-color: white;
+}
+
+.titlepage-content {
+  min-height: calc(100vh - 2rem);
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/************ HOMEPAGE STYLES *****************/
+.homepage-content {
+  width: 100%;
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.homepage-content img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  border: 3px solid #a7d3a6;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+.homepage-content p {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/************* QUESTIONNAIRE STYLES ******************/
+
+/* .question-layout {
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.question-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.question-content {
+  padding: 4rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.question-content .number {
+  font-size: 24px;
+  background-color: #f7ef81;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.question-content p {
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 400px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.question-content h1:nth-of-type(2) {
+  padding-bottom: 2rem;
+}
+
+.button-group {
+  /* position: relative;  */
+  /* left: 0;
+  bottom: 2rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.button-group button.primary:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+/**************** BIRDING LINKS PAGE STYLES *****************/
+
+.link-div {
+  width: 100%;
+  padding: 6rem 0 0 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-wrapper {
+  border: 2px solid #d49d85;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  font-weight: normal;
+  position: relative;
+  max-width: 500px;
+}
+
+.link-wrapper p {
+  background-color: #d49d85;
+  border-radius: 10px;
+  padding: 0.5rem 0.25rem;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: -1rem;
+  letter-spacing: 0.7px;
+}
+
+.link-wrapper img {
+  /* padding: 0rem 2rem 1rem; */
+  padding: 0 1rem 0.5rem;
+  max-height: 50px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .menu-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .link-wrapper img {
+    padding: 0rem 2rem 1rem;
+    max-height: 60px;
+    max-width: 100%;
+  }
+}
+
+/**************** ABOUT PAGE STYLES *****************/
+
+.about-content {
+  padding: 6rem 0 0 0;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content h1 {
+  margin-bottom: 2rem;
+}
+
+.about-content p {
+  padding: 1.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.about-content a {
+  color: #d49d85;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.about-content a:hover {
+  color: #a7d3a6;
+}
+
+.about-content img:nth-of-type(1),
+.about-content img:nth-of-type(2) {
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+  display: block;
+  border: 2px solid #a7d3a6;
+}
+
+.about-content img:nth-of-type(3) {
+  width: 160px;
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid #a7d3a6;
+}
+
+.footer {
+  color: #a7d3a6;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}

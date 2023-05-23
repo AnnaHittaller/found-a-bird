@@ -1,0 +1,159 @@
+.carousel-container {
+  /* width: 50%; */
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red; */
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 45vw;
+  max-height: 380px;
+  object-fit: cover;
+  border: 3px solid #a7d3a6;
+  border-radius: 20px;
+  object-position: center;
+}
+
+.alice-carousel {
+  width: calc(80vw - 2rem);
+  margin: -15px auto 0;
+  position: relative;
+}
+
+li.alice-carousel__stage-item {
+  width: 100% !important;
+}
+
+.item {
+  padding-top: 15px;
+
+  /* width: 300px; */
+  /* margin: 0 auto; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* border: 1px solid red; */
+}
+
+.letter {
+  font-size: 24px;
+  background-color: #f7ef81;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  background-color: #d49d85d5;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.alice-carousel__prev-btn {
+  top: 25%;
+  left: -25px;
+}
+
+.alice-carousel__next-btn {
+  top: 25%;
+  right: -25px;
+}
+
+.alice-carousel span.photographer {
+  position: relative;
+  top: -2rem;
+  opacity: 0.8;
+  color: #a7d3a6;
+}
+
+.question-content p:nth-of-type(2) {
+  max-width: 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  color: white;
+  height: 50px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alice-carousel__dots {
+  position: relative;
+  width: 100%;
+  bottom: 200px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+.alice-carousel__dots-item:not(.__custom) {
+  border: 2px solid #d49d85;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #d49d85;
+}
+
+@media only screen and (min-width: 768px) {
+  .alice-carousel {
+    width: calc(40vw - 2rem);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .alice-carousel__prev-btn {
+    top: 20%;
+    left: -25px;
+  }
+
+  .alice-carousel__next-btn {
+    top: 20%;
+    right: -25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .alice-carousel__prev-btn {
+    width: 40px;
+    height: 40px;
+    top: 15%;
+    left: -20px;
+  }
+
+  .alice-carousel__next-btn {
+    width: 40px;
+    height: 40px;
+    top: 15%;
+    right: -20px;
+  }
+}
