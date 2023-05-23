@@ -1,0 +1,19 @@
+.react-photo-gallery--gallery {
+  height: 100%;
+  width: calc(100% - 2rem);
+  padding: 4rem 0 0 0;
+  margin: 0;
+  user-select: none;
+}
+
+.gallery-title {
+  padding: 6rem 0 2rem 0;
+}
+
+h3 {
+  letter-spacing: 0.5px;
+}
+
+h3 a {
+  color: #a7d3a6;
+}
