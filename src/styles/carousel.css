@@ -10,8 +10,8 @@
 
 .carousel-container img {
   width: 100%;
-  height: 45vw;
-  max-height: 380px;
+  height: 374px;
+  /*max-height: 380px;*/
   object-fit: cover;
   border: 3px solid #a7d3a6;
   border-radius: 20px;
@@ -19,8 +19,9 @@
 }
 
 .alice-carousel {
-  width: calc(80vw - 2rem);
-  margin: -15px auto 0;
+  width: calc(40vw - 2rem);
+  max-width: 600px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -56,7 +57,7 @@ li.alice-carousel__stage-item {
 
 .alice-carousel__prev-btn,
 .alice-carousel__next-btn {
-  background-color: #d49d85d5;
+  background-color: #d49d85;
   padding: 0.5rem;
   border-radius: 50%;
   display: flex;
@@ -69,12 +70,12 @@ li.alice-carousel__stage-item {
 }
 
 .alice-carousel__prev-btn {
-  top: 25%;
+  top: 175px;
   left: -25px;
 }
 
 .alice-carousel__next-btn {
-  top: 25%;
+  top: 175px;
   right: -25px;
 }
 
@@ -103,9 +104,9 @@ li.alice-carousel__stage-item {
 }
 
 .alice-carousel__dots {
-  position: relative;
+  position: absolute;
   width: 100%;
-  bottom: 200px;
+  top: 380px;
   /* left: 50%;
   transform: translateX(-50%); */
 }
@@ -121,39 +122,74 @@ li.alice-carousel__stage-item {
   background-color: #d49d85;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .carousel-container img {
+    height: 300px;
+  }
+
+  .alice-carousel__dots {
+    top: 310px;
+  }
+
+  .alice-carousel__prev-btn {
+    top: 150px;
+  }
+
+  .alice-carousel__next-btn {
+    top: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .alice-carousel {
-    width: calc(40vw - 2rem);
-    max-width: 600px;
-    margin: 0 auto;
+    width: calc(80vw - 2rem);
+    margin: -15px auto 0;
     position: relative;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .carousel-container img {
+    height: 280px;
+  }
+
+  .alice-carousel__dots {
+    top: 290px;
+  }
+
   .alice-carousel__prev-btn {
-    top: 20%;
-    left: -25px;
+    top: 140px;
   }
 
   .alice-carousel__next-btn {
-    top: 20%;
-    right: -25px;
+    top: 140px;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  .carousel-container img {
+    height: 220px;
+  }
+
+  .alice-carousel__dots {
+    top: 230px;
+  }
+
   .alice-carousel__prev-btn {
     width: 40px;
     height: 40px;
-    top: 15%;
+    top: 110px;
     left: -20px;
   }
 
   .alice-carousel__next-btn {
     width: 40px;
     height: 40px;
-    top: 15%;
+    top: 110px;
     right: -20px;
+  }
+
+  .alice-carousel span.photographer {
+    font-size: 12px;
   }
 }

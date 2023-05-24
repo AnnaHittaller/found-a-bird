@@ -17,7 +17,7 @@
   /* justify-content: flex-start; */
   align-items: center;
   background: #fffde0;
-  padding: 1rem;
+  padding-bottom: 2rem;
   color: #d49d85;
   min-height: 100vh;
   overflow: hidden;
@@ -38,6 +38,16 @@
   background: url("https://images.unsplash.com/photo-1605197585663-011e30915ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
     center no-repeat;
   background-size: cover;
+}
+
+.desktop-img-span {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fffde0;
+  font-family: Chewy, sans-serif;
+  opacity: 0.7;
+  font-size: 12px;
 }
 
 h1 {

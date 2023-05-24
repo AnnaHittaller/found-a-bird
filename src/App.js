@@ -1,6 +1,5 @@
-
 import { Routes, Route, useLocation } from "react-router-dom";
-import './generalStyles.css';
+import "./generalStyles.css";
 
 import AllRoutes from "./AllRoutes";
 
@@ -15,9 +14,12 @@ export default function App() {
           width:
             location.pathname === "/" || location.pathname === "/gallery"
               ? "0vw"
-              : ""
+              : "",
         }}
       ></div>
+      {location.pathname === "/" ? null : (
+        <span className="desktop-img-span">Photo by XY on Unsplash</span>
+      )}
       <div
         className="App"
         style={{
@@ -29,12 +31,11 @@ export default function App() {
           width:
             location.pathname === "/" || location.pathname === "/gallery"
               ? "100vw"
-              : ""
+              : "",
         }}
       >
-        <AllRoutes/>
+        <AllRoutes />
       </div>
     </>
   );
 }
-
