@@ -97,8 +97,8 @@ export default function Carousel({ handleAnswer, setCurrentQuestion }) {
         controlsStrategy="alternate"
         renderPrevButton={renderPrevButton}
         renderNextButton={renderNextButton}
-        disableSlideInfo={false}
-        disableDotsControls={true}
+        disableSlideInfo={true}
+        disableDotsControls={false}
       />
     </div>
   );

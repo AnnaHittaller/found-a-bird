@@ -1,6 +1,6 @@
 /************* GENERAL LAYOUT STYLES ***************/
 .main-layout {
-  width: 100%;
+  width: calc(100% - 2rem);
   /* max-height: calc(100% - 2rem); */
   /* height: 100%; */
   display: flex;
