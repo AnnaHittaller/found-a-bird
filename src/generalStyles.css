@@ -4,17 +4,11 @@
   box-sizing: border-box;
 }
 
-/* #root {
-  min-height: 100vh;
-  background: #fffde0;
-} */
-
 .App {
   font-family: Chewy, sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
   background: #fffde0;
   padding-bottom: 2rem;
@@ -25,7 +19,6 @@
   width: 100vw;
   background: center no-repeat;
   background-size: cover;
-  /* position: relative; */
 }
 
 .desktop-img {

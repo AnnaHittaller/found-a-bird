@@ -31,7 +31,6 @@
   right: -15px;
   z-index: 1000;
   cursor: pointer;
-  /*background-color: #d1e6dd;*/
   padding: 2rem;
   border-radius: 50%;
 }
@@ -132,21 +131,6 @@
   max-width: 500px;
 }
 
-/* .menu-content a {
-  color: #d49d85;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-} */
-
-/* .menu-content a:not(:nth-of-type(1)) {
-  margin-bottom: -1rem;
-} */
-
-/* .menu-content p:last-child {
-  padding-top: 1rem;
-  max-width: 500px;
-} */
-
 .menu-open {
   opacity: 1;
   width: 100%;
@@ -172,11 +156,3 @@
   flex-direction: column;
   transition: 0.2s ease-in;
 }
-
-/* 
-@media only screen and (min-width: 768px) {
-
-  .logo {
-    left: calc(40vw + 1rem);
-  }
-} */

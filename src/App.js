@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./generalStyles.css";
 
 import AllRoutes from "./AllRoutes";
@@ -18,7 +18,7 @@ export default function App() {
         }}
       ></div>
       {location.pathname === "/" ? null : (
-        <span className="desktop-img-span">Photo by XY on Unsplash</span>
+        <span className="desktop-img-span">Photo by Hans Veth on Unsplash</span>
       )}
       <div
         className="App"

@@ -4,7 +4,6 @@ import "../styles/gallery.css";
 import MainLayout from "../layouts/MainLayout";
 import { Tooltip } from "react-tooltip";
 import { useEffect, useState } from "react";
-//import { createClient } from "pexels";
 
 export default function PhotoGallery() {
   const [photos, setPhotos] = useState([]);
@@ -13,7 +12,6 @@ export default function PhotoGallery() {
 
   const fetchFotos = async () => {
     try {
-      //const client = createClient(API_KEY);
       const response = await axios.get(
         `https://api.pexels.com/v1/search?query=bird&page=${randomPage}&per_page=20`,
         {
