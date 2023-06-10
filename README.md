@@ -5,7 +5,7 @@ The **I found a bird** app helps you and every bird lover decide whether or not 
 With easily understandable descriptions and questions this app will give you an answer within a minute, and you will never have to waste time googleing again what to do.
 With nice **bird photos** & **useful links** for birding.
 
-:point_right: Check out the live version on [Vercel](http://).
+:point_right: Check out the live version on [Vercel](https://found-a-bird.vercel.app).
 
 Share the love (and the app) with other animal lovers too!
 
