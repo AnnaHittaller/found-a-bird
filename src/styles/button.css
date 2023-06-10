@@ -19,6 +19,7 @@ button {
   padding: 0.25rem;
   border-radius: 15px;
   font-size: 20px;
+  outline: none;
   font-family: Chewy, sans-serif;
   letter-spacing: 1.5px;
   cursor: pointer;
