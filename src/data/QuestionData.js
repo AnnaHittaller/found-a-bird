@@ -4,7 +4,7 @@ export const questionData = [
     number: 1,
     text: "Is it injured?",
     details:
-      "Check for any visible injuries, such as wounds or unusual leg or wing positions. Ensure that the bird appears healthy, behaves normally, and is able to move comfortably.",
+      "Check for any visible injuries, such as wounds or unusual leg or wing positions. The bird is probably not injured, if it appears healthy, behaves normally, and is able to move comfortably.",
     answers: [
       { text: "Yes", nextQuestion: "outcomeHelp" },
       { text: "No", nextQuestion: "q2" },
