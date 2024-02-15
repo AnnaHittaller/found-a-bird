@@ -22,7 +22,7 @@ export default function PhotoGallery() {
       );
       if (response) {
         setPhotos(response.data.photos);
-        console.log(response.data);
+        //console.log(response.data);
       }
     } catch (error) {
       console.log(error.message);
@@ -33,7 +33,7 @@ export default function PhotoGallery() {
     fetchFotos();
   }, []);
 
-  console.log("rerender");
+  //console.log("rerender");
   let photoArray;
 
   const handleImageClick = (event) => {
@@ -56,7 +56,7 @@ export default function PhotoGallery() {
         "data-tooltip-offset": "-60"
       };
     });
-    console.log(photoArray, "array");
+    //console.log(photoArray, "array");
   }
 
   return (

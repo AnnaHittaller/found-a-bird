@@ -16,7 +16,7 @@ export default function Questionnaire() {
   const navigate = useNavigate();
 
   const handleAnswer = (nextQuestionId) => {
-    console.log("handleAnswer fired");
+    //console.log("handleAnswer fired");
     const nextQuestion = questionData.find(
       (question) => question.id === nextQuestionId
     );
