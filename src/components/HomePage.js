@@ -11,7 +11,7 @@ export default function HomePage() {
         <h2>What should I do?</h2>
         <img
           alt="baby bird sitting in the grass"
-          src="https://c.pxhere.com/photos/06/21/red_robin_bird_feathered_nature_wildlife_animal_fledgling_poult-1357505.jpg!d"
+          src="https://wp.wildvogelhilfe.org/wp-content/uploads/Singdrossel_Sid_Mosdell01.jpg"
         />
         <p>
           Many of us may have already stumbled upon seemingly helpless baby
